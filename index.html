@@ -1,0 +1,151 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Education Hub</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: "Courier New", monospace;
+    }
+
+    body{
+      height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      background: linear-gradient(to bottom, #03141c, #000000);
+      color:white;
+    }
+
+    .container{
+      width:90%;
+      max-width:420px;
+      padding:40px 25px;
+      border-radius:35px;
+      border:2px solid #00ffcc44;
+      background:#000;
+      text-align:center;
+      box-shadow:0 0 20px rgba(0,255,200,0.15);
+    }
+
+    h1{
+      font-size:48px;
+      letter-spacing:8px;
+      color:#00ffd5;
+      text-shadow:0 0 12px #00ffd5;
+      margin-bottom:10px;
+    }
+
+    .subtitle{
+      color:gray;
+      margin-bottom:35px;
+      letter-spacing:2px;
+    }
+
+    .btn{
+      width:100%;
+      padding:18px;
+      margin:15px 0;
+      font-size:22px;
+      font-weight:bold;
+      border-radius:20px;
+      cursor:pointer;
+      transition:0.3s;
+      text-transform:uppercase;
+      letter-spacing:2px;
+    }
+
+    .physics{
+      background:#111;
+      color:white;
+      border:3px solid white;
+    }
+
+    .physics:hover{
+      background:white;
+      color:black;
+    }
+
+    .chemistry{
+      background:#8b0000;
+      color:#ffcccc;
+      border:3px solid #ff3b3b;
+    }
+
+    .chemistry:hover{
+      background:#ff3b3b;
+      color:white;
+    }
+
+    .math{
+      background:#001f4d;
+      color:#8ec5ff;
+      border:3px solid #3399ff;
+    }
+
+    .math:hover{
+      background:#3399ff;
+      color:white;
+    }
+
+    .biology{
+      background:#003300;
+      color:#99ff99;
+      border:3px solid #00cc44;
+    }
+
+    .biology:hover{
+      background:#00cc44;
+      color:white;
+    }
+
+    .footer{
+      margin-top:20px;
+      color:gray;
+      font-size:14px;
+      line-height:1.5;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>EDU HUB</h1>
+    <p class="subtitle">SMART LEARNING MODE</p>
+
+    <button class="btn physics" onclick="openPage('physics.html')">
+      Physics
+    </button>
+
+    <button class="btn chemistry" onclick="openPage('chemistry.html')">
+      Chemistry
+    </button>
+
+    <button class="btn math" onclick="openPage('mathematics.html')">
+      Mathematics
+    </button>
+
+    <button class="btn biology" onclick="openPage('biology.html')">
+      Biology
+    </button>
+
+    <div class="footer">
+      Learn smarter with interactive subjects.
+    </div>
+  </div>
+
+  <script>
+    function openPage(page){
+      window.location.href = page;
+    }
+  </script>
+
+</body>
+</html>

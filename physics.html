@@ -1,0 +1,193 @@
+<!-- physics.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Physics Units</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: "Courier New", monospace;
+    }
+
+    body{
+      background: linear-gradient(to bottom, #03141c, #000000);
+      color:white;
+      min-height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      padding:20px;
+    }
+
+    .container{
+      width:100%;
+      max-width:500px;
+      background:black;
+      border:2px solid #00ffd544;
+      border-radius:30px;
+      padding:30px 20px;
+      text-align:center;
+      box-shadow:0 0 20px rgba(0,255,200,0.2);
+    }
+
+    h1{
+      color:#00ffd5;
+      font-size:38px;
+      margin-bottom:10px;
+      text-shadow:0 0 10px #00ffd5;
+      letter-spacing:5px;
+    }
+
+    .subtitle{
+      color:gray;
+      margin-bottom:30px;
+      letter-spacing:2px;
+    }
+
+    .unit-btn{
+      width:100%;
+      padding:16px;
+      margin:10px 0;
+      border:none;
+      border-radius:15px;
+      background:#111;
+      border:2px solid #00ffd5;
+      color:#00ffd5;
+      font-size:16px;
+      font-weight:bold;
+      cursor:pointer;
+      transition:0.3s;
+      text-align:left;
+    }
+
+    .unit-btn:hover{
+      background:#00ffd5;
+      color:black;
+      transform:scale(1.02);
+    }
+
+    .back-btn{
+      display:inline-block;
+      margin-top:25px;
+      text-decoration:none;
+      color:white;
+      border:2px solid white;
+      padding:12px 25px;
+      border-radius:12px;
+      transition:0.3s;
+    }
+
+    .back-btn:hover{
+      background:white;
+      color:black;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>PHYSICS</h1>
+    <p class="subtitle">SELECT A UNIT</p>
+
+    <!-- UNIT BUTTONS -->
+
+    <button class="unit-btn" onclick="openPDF('pdfs/unit1.pdf')">
+      UNIT 1: Units and Measurements
+    </button>
+
+    <button class="unit-btn" onclick="openPDF('pdfs/unit2.pdf')">
+      UNIT 2: Kinematics
+    </button>
+
+    <button class="unit-btn" onclick="openPDF('pdfs/unit3.pdf')">
+      UNIT 3: Laws of Motion
+    </button>
+
+    <button class="unit-btn" onclick="openPDF('pdfs/unit4.pdf')">
+      UNIT 4: Work, Energy and Power
+    </button>
+
+    <button class="unit-btn" onclick="openPDF('pdfs/unit5.pdf')">
+      UNIT 5: Rotational Motion
+    </button>
+
+    <button class="unit-btn" onclick="openPDF('pdfs/unit6.pdf')">
+      UNIT 6: Gravitation
+    </button>
+
+    <button class="unit-btn" onclick="openPDF('pdfs/unit7.pdf')">
+      UNIT 7: Properties of Solids and Liquids
+    </button>
+
+    <button class="unit-btn" onclick="openPDF('pdfs/unit8.pdf')">
+      UNIT 8: Thermodynamics
+    </button>
+
+    <button class="unit-btn" onclick="openPDF('pdfs/unit9.pdf')">
+      UNIT 9: Kinetic Theory of Gases
+    </button>
+
+    <button class="unit-btn" onclick="openPDF('pdfs/unit10.pdf')">
+      UNIT 10: Oscillations and Waves
+    </button>
+
+    <button class="unit-btn" onclick="openPDF('pdfs/unit11.pdf')">
+      UNIT 11: Electrostatics
+    </button>
+
+    <button class="unit-btn" onclick="openPDF('pdfs/unit12.pdf')">
+      UNIT 12: Current Electricity
+    </button>
+
+    <button class="unit-btn" onclick="openPDF('pdfs/unit13.pdf')">
+      UNIT 13: Magnetic Effects of Current and Magnetism
+    </button>
+
+    <button class="unit-btn" onclick="openPDF('pdfs/unit14.pdf')">
+      UNIT 14: Electromagnetic Induction and Alternating Currents
+    </button>
+
+    <button class="unit-btn" onclick="openPDF('pdfs/unit15.pdf')">
+      UNIT 15: Electromagnetic Waves
+    </button>
+
+    <button class="unit-btn" onclick="openPDF('pdfs/unit16.pdf')">
+      UNIT 16: Optics
+    </button>
+
+    <button class="unit-btn" onclick="openPDF('pdfs/unit17.pdf')">
+      UNIT 17: Dual Nature of Matter and Radiation
+    </button>
+
+    <button class="unit-btn" onclick="openPDF('pdfs/unit18.pdf')">
+      UNIT 18: Atoms and Nuclei
+    </button>
+
+    <button class="unit-btn" onclick="openPDF('pdfs/unit19.pdf')">
+      UNIT 19: Electronic Devices
+    </button>
+
+    <a href="index.html" class="back-btn">Back Home</a>
+
+  </div>
+
+  <script>
+
+    function openPDF(pdfFile){
+      window.location.href = pdfFile;
+    }
+
+  </script>
+
+</body>
+</html>
